@@ -28,6 +28,7 @@ App.on("start", function(options) {
 	App.footerRegion.show(footerView);
 
 
+	console.log(options.apiURL);
 	$.ajax({
 		url			: options.apiURL + "/projects",
 		type		: "GET",
